@@ -1,13 +1,18 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio'
+
 
 function App() {
 
   return (
-    <>
-      <h1>Waseem Khalo</h1>
-      <Navbar />
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}> </Route>
+      <Route path='/portfolio' element={<Portfolio/>}> </Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

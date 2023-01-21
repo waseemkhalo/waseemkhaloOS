@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
+
 function Navbar() {
 
     return (
 
         <ul>
-            <li>Portfolio</li>
+            <Link to='/portfolio'> <li>Portfolio</li> </Link>
             <li>About</li>
             <li>Contact</li>
         </ul>
