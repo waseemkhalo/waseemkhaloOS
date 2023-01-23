@@ -1,0 +1,14 @@
+.home {
+    display: flex;
+    
+
+    &__heading {
+        margin-right: 20px;
+        font-size: 70px;
+        color: white;
+    }
+
+    &__subheading {
+        font-size: 100px;
+    }
+}
