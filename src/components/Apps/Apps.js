@@ -13,7 +13,7 @@ function Apps() {
         <div className="apps__container">
           <img className="apps__logo" src={everyday} />
         </div>
-        <h4 >Everyday</h4>
+        <h4 className="apps__header">Everyday</h4>
       </a>
     </div>
   );
