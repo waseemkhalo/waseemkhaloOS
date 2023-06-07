@@ -5,11 +5,15 @@ import everyday from "../../assets/apps/sm-logo.png";
 function Apps() {
   return (
     <div className="apps">
-      <a className="apps_container" target="_blank" href="https://www.everydaytodo.com">
+      <a
+        className="apps__link"
+        target="_blank"
+        href="https://www.everydaytodo.com"
+      >
         <div className="apps__container">
           <img className="apps__logo" src={everyday} />
         </div>
-        <h1>Everyday</h1>
+        <h4 >Everyday</h4>
       </a>
     </div>
   );
