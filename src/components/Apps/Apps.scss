@@ -1,4 +1,7 @@
 .apps {
+    display: flex;
+    gap: 2rem;
+
     &__link {
         display: flex;
         flex-direction: column;
