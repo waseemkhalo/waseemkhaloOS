@@ -1,5 +1,6 @@
 .hero {
     height: 83vh;
+    width: 38.9rem;
     margin-left: 6rem;
     margin-right: 1rem;
     margin-top: 4rem;
@@ -23,15 +24,49 @@
     }
 
     &__pfp {
-        justify-content: center;
+        position: absolute;
+        left: 9%;
+        top: 17%;
         width: 12rem;
         height: 12rem;
+        object-fit: contain;
+        background-image: url('../../assets/pfp.jpg');
+        background-size: 25rem;
+        background-position: -4rem -2rem;
+        background-repeat: no-repeat;
         border-radius: 50%;
+        box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
     }
 
     &__icons{
         position: absolute;
         left: 1.5rem;
+
+        &--back {
+            position: absolute;
+            left: .5rem;
+            width: 20px;
+        }
+
+        &--forward {
+            position: absolute;
+            left: 2.5rem;
+            width: 20px;
+        }
+
+        &--refresh {
+            position: absolute;
+            left: 4.5rem;
+            width: 15px;
+            
+        }
+
+        &--SSL {
+            position: absolute;
+            left: 6.8rem;
+            width: 10px;
+            
+        }
         
 
         &--w {
@@ -52,28 +87,44 @@
         align-items: center;
         position: absolute;
         top: 6.44rem;
-        height: 2rem;
+        height: 2.5rem;
         width: 38.9rem;
         background-color: white;
 
-        &--icon {
-            position: absolute;
-            left: 1.5rem;
-        }
-
         &--search{
             position: absolute;
-            left: 8.95rem;
-            width: 30.9rem;
-            height: 2rem;
+            left: 6rem;
+            width: 32rem;
+            height: 1.5rem;
             border: none;
-            background-color: lightgrey;
+            border-radius: 2rem;
+            background-color: #F1F3F4;
             font-size: 1rem;
+        }
+
+
+        &--url {
+            position: absolute;
+            left: 8rem;
+            font-size: .8rem;
             font-weight: 400;
-            color: #000;
-            outline: none;
+
         }
     }
 
+
+    &__heading {
+        position: absolute;
+        top: 10rem;
+        left: 20rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        
+    }
+
+
+    &__bio {
+        display: flex;
+    }
     
 }
