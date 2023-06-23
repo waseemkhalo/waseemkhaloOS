@@ -13,7 +13,7 @@ function Apps() {
         rel="noopener noreferrer"
       >
         <div className="apps__container">
-          <img className="apps__logo" src={everyday} alt='everyday logo'/>
+          <img className="apps__logo" src={everyday} alt="everyday logo" />
         </div>
         <h4 className="apps__header">Everyday</h4>
       </a>
@@ -24,7 +24,7 @@ function Apps() {
         rel="noopener noreferrer"
       >
         <div className="apps__container">
-          <img className="apps__logo" src={anbu} alt='anbu logo' />
+          <img className="apps__logo" src={anbu} alt="anbu logo" />
         </div>
         <h4 className="apps__header">Anbu</h4>
       </a>

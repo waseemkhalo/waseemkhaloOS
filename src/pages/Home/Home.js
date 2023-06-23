@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar/Navbar";
 import Apps from "../../components/Apps/Apps";
 import './Home.scss'
 import Hero from "../../components/Hero/Hero";
