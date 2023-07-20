@@ -1,7 +1,7 @@
 .navbar {
   background: rgba(255, 255, 255, 0.57);
   box-shadow: 0px -20px 40px 0px rgba(0, 0, 0, 0.25);
-  height: 2.5rem;
+  height: 2.9375rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,6 @@
     &__today {
       color: rgba(0, 0, 0, 0.5);
       text-align: right;
-      font-family: Inter;
       font-size: 0.625rem;
       font-style: normal;
       font-weight: 400;
@@ -59,7 +58,6 @@
 
     &__time {
       color: #000;
-      font-family: Inter;
       font-size: 0.875rem;
       font-style: normal;
       font-weight: 700;
