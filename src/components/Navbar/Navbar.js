@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom';
+import "./Navbar.scss"
+import mic from '../../assets/icons/microphone.svg'
 
 function Navbar() {
 
     return (
 
-        <ul>
-            <Link to='/portfolio'> <li>Portfolio</li> </Link>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
+        <div className='navbar'>
+            <h1 className="navbar__prompt">Try “Hey Blue, Open Email”</h1>
+            <img src={mic}/> 
+        </div>
     );
   }
   

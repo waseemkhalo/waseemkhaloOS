@@ -1,18 +1,20 @@
 import Apps from "../../components/Apps/Apps";
-import './Home.scss'
+import "./Home.scss";
 import Hero from "../../components/Hero/Hero";
+import Navbar from "../../components/Navbar/Navbar";
 
 function Home() {
-
-    return (
-        <div className="home">
-            {/* <Navbar /> */}
-            <div className="home">
-                <Hero />
-                <Apps />
-            </div>
+  return (
+    <>
+      <Navbar />
+      <div className="home">
+        <Hero />
+        <div className="home__right-side">
+          <Apps />
         </div>
-    );
+      </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;
