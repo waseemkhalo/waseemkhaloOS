@@ -3,17 +3,28 @@
   box-shadow: 0px -20px 40px 0px rgba(0, 0, 0, 0.25);
   height: 2.5rem;
   width: 100%;
-  position: absolute;
+  display: flex;
 
-  &__prompt {
+
+  &__prompt{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__search {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    position: absolute;
-    top: -.2rem;
-    left: 2.81rem;
+  }
+
+  &__mic {
+    width: 1rem;
+
   }
 }
