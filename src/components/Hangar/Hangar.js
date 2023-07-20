@@ -1,4 +1,4 @@
-import "./Navbar.scss";
+import "./Hangar.scss";
 import mic from "../../assets/icons/microphone.svg";
 import w from "../../assets/icons/w-large.png";
 import bluetooth from "../../assets/icons/bluetooth.svg";

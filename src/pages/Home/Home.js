@@ -1,12 +1,12 @@
 import Apps from "../../components/Apps/Apps";
 import "./Home.scss";
 import Hero from "../../components/Hero/Hero";
-import Navbar from "../../components/Navbar/Navbar";
+import Hangar from "../../components/Hangar/Hangar";
 
 function Home() {
   return (
     <>
-      <Navbar />
+      <Hangar />
       
       <div className="home">
       <Hero />  
