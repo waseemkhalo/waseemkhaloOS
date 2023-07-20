@@ -7,7 +7,7 @@ function Navbar() {
 
         <div className='navbar'>
             <h1 className="navbar__prompt">Try “Hey Blue, Open Email”</h1>
-            <img src={mic}/> 
+            <img className="navbar__mic" src={mic}/> 
         </div>
     );
   }
