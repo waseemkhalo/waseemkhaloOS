@@ -7,8 +7,9 @@ function Home() {
   return (
     <>
       <Navbar />
+      
       <div className="home">
-        <Hero />
+      <Hero />  
         <div className="home__right-side">
           <Apps />
         </div>

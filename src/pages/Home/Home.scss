@@ -1,24 +1,4 @@
 .home {
-    display: flex;
-    width: 100%;
-
-    &__heading {
-        font-size: 4.2rem;
-        color: white;
-        position: absolute;
-        top: 100%;
-        padding: 1rem;
-    }
-
-    &__subheading {
-        font-size: 10rem;
-        height: 120px;
-        position: relative;
-        left: 90%;
-    }
-
-    &__hero-container {
-        position: relative;
-        display: flex;
-    }
+  display: flex;
+  width: 100%;
 }

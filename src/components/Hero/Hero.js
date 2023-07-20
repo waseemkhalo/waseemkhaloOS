@@ -26,7 +26,8 @@ function Hero() {
       <div className="hero__bio">
         <img className="hero__pfp" alt="w"/>
         <h1 className="hero__heading">Waseem Khalo</h1>
-        <h2 className="hero__subheading">testing 123🚜</h2>
+        <h2 className="hero__subheading">Turbulance!🚜</h2>
+        
       </div>
     </div>
   );
