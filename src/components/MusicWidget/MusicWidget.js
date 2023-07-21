@@ -22,26 +22,17 @@ function MusicWidget() {
   };
 
   useEffect(() => {
-
-    const audioElement = audioRef.current;
-
     // Update progress bar as song plays
     const updateProgress = () => {
-      const audioElement = audioRef.current;
-      const currentTime = audioElement.current.currentTime;
-      const duration = audioElement.current.duration;
+      const currentTime = audioRef.current.currentTime;
+      const duration = audioRef.current.duration;
       const progressPercent = (currentTime / duration) * 100;
       setProgress(progressPercent);
       setDuration(currentTime);
     };
 
-    audioElement.current.addEventListener("timeupdate", updateProgress);
+    audioRef.current.addEventListener("timeupdate", updateProgress);
 
-    // Cleanup function to remove event listener
-    return () => {
-      const audioElement = audioRef.current;
-      audioElement.current.removeEventListener("timeupdate", updateProgress);
-    };
   }, []);
 
   // Play or pause the audio
