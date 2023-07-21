@@ -22,22 +22,27 @@ function MusicWidget() {
   };
 
   useEffect(() => {
+
+    const audioElement = audioRef.current;
+
     // Update progress bar as song plays
     const updateProgress = () => {
-      const currentTime = audioRef.current.currentTime;
-      const duration = audioRef.current.duration;
+      const audioElement = audioRef.current;
+      const currentTime = audioElement.current.currentTime;
+      const duration = audioElement.current.duration;
       const progressPercent = (currentTime / duration) * 100;
       setProgress(progressPercent);
       setDuration(currentTime);
     };
 
-    audioRef.current.addEventListener("timeupdate", updateProgress);
+    audioElement.current.addEventListener("timeupdate", updateProgress);
 
     // Cleanup function to remove event listener
     return () => {
-      audioRef.current.removeEventListener("timeupdate", updateProgress);
+      const audioElement = audioRef.current;
+      audioElement.current.removeEventListener("timeupdate", updateProgress);
     };
-  }, [audioRef.current]); // Add audioRef.current as a dependency
+  }, []);
 
   // Play or pause the audio
   const togglePlay = () => {
@@ -61,16 +66,12 @@ function MusicWidget() {
 
   return (
     <div className="music">
-      <div className="music__details">
-        <img
-          className="music__cover"
-          src={kissland}
-          alt="kissland album cover"
-        />
-        <div className="music__container">
-          <h1 className="music__song">Kiss Land</h1>
-          <h2 className="music__song-details">Kiss Land • The Weeknd</h2>
-        </div>
+        <div className="music__details">
+          <img className="music__cover" src={kissland} alt="kissland album cover" />
+          <div className="music__container">
+            <h1 className="music__song">Kiss Land</h1>
+            <h2 className="music__song-details">Kiss Land • The Weeknd</h2>
+          </div>
       </div>
 
       <div className="music__player">
@@ -89,7 +90,7 @@ function MusicWidget() {
           </div>
 
           <button className="controls__button" onClick={fastForward15Seconds}>
-            <img src={fastforward} alt="fast forward button" />
+            <img src={fastforward} alt='fast forward button'/>
           </button>
 
           <p className="controls__time">{formatTime(duration)}</p>
