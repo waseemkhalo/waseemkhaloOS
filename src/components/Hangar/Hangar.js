@@ -9,7 +9,7 @@ function Navbar() {
     <div className="navbar">
       <div className="navbar__prompt">
         <h1 className="navbar__search">
-          Try “Hey Seemo, Show me your portfolio”
+          Try “Hey Waseem, show me your portfolio”
         </h1>
         <img className="navbar__mic" src={mic} alt="microphone img" />
       </div>
