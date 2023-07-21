@@ -1,10 +1,11 @@
 import Apps from "../../components/Apps/Apps";
-import "./Home.scss";
-import Hero from "../../components/Hero/Hero";
 import Hangar from "../../components/Hangar/Hangar";
 import CalendarWidget from "../../components/CalendarWidget/CalendarWidget";
 import MusicWidget from "../../components/MusicWidget/MusicWidget";
 import WeatherWidget from "../../components/WeatherWidget/WeatherWidget";
+import Browser from "../../components/Browser/Browser";
+import "./Home.scss";
+
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
       <Hangar />
 
       <div className="home">
-        <Hero />
+        <Browser />
         <div className="home__right-side">
           <CalendarWidget />
           <div className="home__right-side--bottom">

@@ -1,134 +1,35 @@
-.hero {
-    height: 83vh;
-    width: 38.9rem;
-    margin-left: 6rem;
-    margin-right: 1rem;
-    margin-top: 4rem;
-    margin-bottom: 6rem;
-    padding-right: 24rem;
-    border-radius: 1.5rem;
-    background-color: white;
-    box-shadow: 0px 4px 25px 11px rgba(0, 0, 0, 0.25);
+.bio {
+  display: flex;
+  align-items: flex-start;
+  margin: 1.5rem;
+
+  &__pfp {
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+    background-image: url("../../assets/pfp.jpg");
+    background-size: 25rem;
+    background-position: -4rem -2rem;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  &__who {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
 
-    &__nav {
-        position: absolute;
-        background-color: #f9f9f9;
-        width: 38.9rem;
-        height: 2.4375rem;
-        border-radius: 1.5rem 1.5rem 0rem 0rem;
-        display: flex;
-        align-items: center;
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+  }
 
-    }
-
-    &__pfp {
-        position: absolute;
-        left: 8rem;
-        top: 10rem;
-        width: 12rem;
-        height: 12rem;
-        object-fit: contain;
-        background-image: url('../../assets/pfp.jpg');
-        background-size: 25rem;
-        background-position: -4rem -2rem;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
-    }
-
-    &__icons{
-        position: absolute;
-        left: 1.5rem;
-
-        &--back {
-            position: absolute;
-            left: .5rem;
-            width: 20px;
-        }
-
-        &--forward {
-            position: absolute;
-            left: 2.5rem;
-            width: 20px;
-        }
-
-        &--refresh {
-            position: absolute;
-            left: 4.5rem;
-            width: 15px;
-            
-        }
-
-        &--SSL {
-            position: absolute;
-            left: 6.8rem;
-            width: 10px;
-            
-        }
-        
-
-        &--w {
-            position: absolute;
-            left: 7rem;
-        }
-
-        &--waseem {
-            position: absolute;
-            left: 8.9rem;
-            font-weight: 400;
-        }
-
-    }
-
-    &__searchbar {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 6.44rem;
-        height: 2.5rem;
-        width: 38.9rem;
-        background-color: white;
-
-        &--search{
-            position: absolute;
-            left: 6rem;
-            width: 32rem;
-            height: 1.5rem;
-            border: none;
-            border-radius: 2rem;
-            background-color: #F1F3F4;
-            font-size: 1rem;
-        }
-
-
-        &--url {
-            position: absolute;
-            left: 8rem;
-            font-size: .8rem;
-            font-weight: 400;
-
-        }
-    }
-
-
-    &__heading {
-        position: absolute;
-        top: 10rem;
-        left: 21rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-        
-    }
-
-    &__subheading {
-        position: absolute;
-    }
-
-
-    &__bio {
-        display: flex;
-    }
-    
+  &__subheading {
+    margin: 0;
+  }
 }
