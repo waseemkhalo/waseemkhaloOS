@@ -7,7 +7,6 @@ import PauseCircleFilledIcon from "@mui/icons-material/PauseCircleFilled";
 import fastforward from "../../assets/icons/fastforward.svg";
 import rewind from "../../assets/icons/rewind.svg";
 import { grey } from "@mui/material/colors";
-import spotify from "../../assets/icons/spotify.svg";
 
 function MusicWidget() {
   const audioRef = useRef(null);
@@ -63,7 +62,7 @@ function MusicWidget() {
   return (
     <div className="music">
         <div className="music__details">
-          <img className="music__cover" src={kissland} alt="" />
+          <img className="music__cover" src={kissland} alt="kissland album cover" />
           <div className="music__container">
             <h1 className="music__song">Kiss Land</h1>
             <h2 className="music__song-details">Kiss Land • The Weeknd</h2>
@@ -75,7 +74,7 @@ function MusicWidget() {
 
         <div className="controls__progress">
           <button className="controls__button" onClick={rewind15Seconds}>
-            <img src={rewind} />
+            <img src={rewind} alt="rewind button" />
           </button>
 
           <div className="progress-bar-container">
@@ -86,7 +85,7 @@ function MusicWidget() {
           </div>
 
           <button className="controls__button" onClick={fastForward15Seconds}>
-            <img src={fastforward} />
+            <img src={fastforward} alt='fast forward button'/>
           </button>
 
           <p className="controls__time">{formatTime(duration)}</p>

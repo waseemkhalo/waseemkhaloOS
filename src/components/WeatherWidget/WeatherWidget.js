@@ -122,16 +122,20 @@ function WeatherWidget() {
   }, []);
 
   return (
-    <div className="weather-widget">
+    <div className="weather">
       {weatherData && (
         <div className="weather-info">
-          <img
-            src={getWeatherIcon(weatherData.current.condition.code)}
-            alt="Weather Icon"
-          />
-          <p>{weatherData.current.temp_c} °C</p>
-
-          <h3>{weatherData.location.name}</h3>
+          <div className="weather-info__container">
+            <img
+              className="weather-info__icon"
+              src={getWeatherIcon(weatherData.current.condition.code)}
+              alt="Weather Icon"
+            />
+            <div className="weather-info__geo">
+              <p className="weather-info__temp">{weatherData.current.temp_c}°C</p>
+              <h3 className="weather-info__location">{weatherData.location.name}</h3>
+            </div>
+          </div>
 
           <p>{weatherData.current.condition.text}</p>
           <p>Humidity: {weatherData.current.humidity} %</p>
