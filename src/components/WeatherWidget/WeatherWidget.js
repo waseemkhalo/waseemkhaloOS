@@ -52,6 +52,7 @@ import icon314 from "../../assets/weather/314.png";
 
 function WeatherWidget() {
   const [weatherData, setWeatherData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const apiKey = "0e5e8b4c2f6c48d2853205406232107"; // Replace with your actual API key from www.weatherapi.com
 
@@ -108,39 +109,65 @@ function WeatherWidget() {
         (position) => {
           const latitude = position.coords.latitude;
           const longitude = position.coords.longitude;
-          getWeatherData(latitude, longitude);
+          setIsLoading(true);
+          getWeatherData(latitude, longitude)
+            .then(() => {
+              setIsLoading(false);
+            })
+            .catch((error) => {
+              console.error("Error getting weather data:", error);
+              setWeatherData(null);
+              setIsLoading(false); 
+            });
         },
         (error) => {
           console.error("Error getting geolocation:", error);
           setWeatherData(null);
+          setIsLoading(false); 
         }
       );
     } else {
       console.log("Geolocation is not available in this browser.");
       setWeatherData(null);
+      setIsLoading(false);
     }
   }, []);
 
   return (
     <div className="weather">
-      {weatherData && (
-        <div className="weather-info">
-          <div className="weather-info__container">
-            <img
-              className="weather-info__icon"
-              src={getWeatherIcon(weatherData.current.condition.code)}
-              alt="Weather Icon"
-            />
-            <div className="weather-info__geo">
-              <p className="weather-info__temp">{weatherData.current.temp_c}°C</p>
-              <h3 className="weather-info__location">{weatherData.location.name}</h3>
-            </div>
-          </div>
-
-          <p>{weatherData.current.condition.text}</p>
-          <p>Humidity: {weatherData.current.humidity} %</p>
-          {/* Add more weather details as needed */}
+      {isLoading ? (
+        <div className="weather--loading">
+          Loading weather data, please make sure your location is enabled.
         </div>
+      ) : (
+        weatherData && (
+          <div className="weather-info">
+            <div className="weather-info__container">
+              <img
+                className="weather-info__icon"
+                src={getWeatherIcon(weatherData.current.condition.code)}
+                alt="Weather Icon"
+              />
+              <div className="weather-info__geo">
+                <p className="weather-info__temp">
+                  {weatherData.current.temp_c}°C
+                </p>
+
+                <h3 className="weather-info__location">
+                  {weatherData.location.name}
+                </h3>
+              </div>
+            </div>
+
+            <p className="weather-info__location">
+              Feels like {weatherData.current.feelslike_c}°C
+            </p>
+            <p className="weather-info__location">
+              {weatherData.current.condition.text}
+            </p>
+            {/* TODO: Forecast? */}
+          </div>
+        )
       )}
     </div>
   );
