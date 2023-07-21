@@ -23,8 +23,8 @@ function Apps() {
         href="https://www.everydaytodo.com"
         rel="noopener noreferrer"
       >
-        <div className="apps__container">
-          <img className="apps__logo" src={anbu} alt="anbu logo" />
+        <div className="apps__container apps__container--anbu ">
+          <img className="apps__logo apps__anbu" src={anbu} alt="anbu logo" />
         </div>
         <h4 className="apps__header">Anbu</h4>
       </a>
