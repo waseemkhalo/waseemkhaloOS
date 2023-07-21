@@ -3,4 +3,12 @@
   width: 100%;
   justify-content: space-around;
   margin-top: 1rem;
+
+  &__right-side {
+
+    &--bottom {
+      display: flex;
+      gap: 2rem;
+    }
+  }
 }

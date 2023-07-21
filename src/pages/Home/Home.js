@@ -4,17 +4,21 @@ import Hero from "../../components/Hero/Hero";
 import Hangar from "../../components/Hangar/Hangar";
 import CalendarWidget from "../../components/CalendarWidget/CalendarWidget";
 import MusicWidget from "../../components/MusicWidget/MusicWidget";
+import WeatherWidget from "../../components/WeatherWidget/WeatherWidget";
 
 function Home() {
   return (
     <>
       <Hangar />
-      
+
       <div className="home">
-      <Hero />  
+        <Hero />
         <div className="home__right-side">
           <CalendarWidget />
-          <MusicWidget />
+          <div className="home__right-side--bottom">
+            <WeatherWidget />
+            <MusicWidget />
+          </div>
           <Apps />
         </div>
       </div>
