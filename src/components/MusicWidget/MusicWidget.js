@@ -24,8 +24,9 @@ function MusicWidget() {
   useEffect(() => {
     // Update progress bar as song plays
     const updateProgress = () => {
-      const currentTime = audioRef.current.currentTime;
-      const duration = audioRef.current.duration;
+      const audioElement = audioRef.current;
+      const currentTime = audioElement.current.currentTime;
+      const duration = audioElement.current.duration;
       const progressPercent = (currentTime / duration) * 100;
       setProgress(progressPercent);
       setDuration(currentTime);
@@ -35,7 +36,8 @@ function MusicWidget() {
 
     // Cleanup function to remove event listener
     return () => {
-      audioRef.current.removeEventListener("timeupdate", updateProgress);
+      const audioElement = audioRef.current;
+      audioElement.current.removeEventListener("timeupdate", updateProgress);
     };
   }, []);
 
