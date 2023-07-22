@@ -4,10 +4,14 @@
   margin-top: 1.5rem;
 
   &__right-side {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
     &--bottom {
       display: flex;
       gap: 2rem;
+      margin-bottom: 2rem;
     }
   }
 }
