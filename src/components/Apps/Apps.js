@@ -41,7 +41,7 @@ function Apps() {
 
       <a
         className="apps__link"
-        href="#"
+        href="https://www.waseemkhalo.com"
         rel="noopener noreferrer"
         onClick={showAlert}
       >
