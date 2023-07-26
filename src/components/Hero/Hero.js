@@ -9,9 +9,10 @@ function Hero() {
       <div className="bio">
         <div className="bio__pfp" />
         <div className="bio__who">
+          <p className="bio__hey">Hey, I'm</p>
           <h1 className="bio__heading">Waseem Khalo</h1>
-          <h2 className="bio__subheading">Software Engineer</h2>
-          <p className="bio__change">Inspired to make impactful products</p>
+          {/* <h2 className="bio__subheading">Software Engineer</h2> */}
+          {/* <p className="bio__change">Inspired to make impactful products</p>
 
           <div className="bio__socials">
             <a
@@ -39,12 +40,12 @@ function Hero() {
                 alt="socials github"
               />
             </a>
-          </div>
-        </div>
+          </div> */}
+        </div> 
       </div>
 
-      <div>
-        <h1>About me</h1>
+      <div className="about">
+        <h1 className="about__title">About me</h1>
         <p> This is me </p>
       </div>
     </>
