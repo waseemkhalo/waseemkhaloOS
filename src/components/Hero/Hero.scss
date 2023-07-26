@@ -1,35 +1,71 @@
 .bio {
   display: flex;
   align-items: flex-start;
-  margin: 1.5rem;
-
-  &__pfp {
-    width: 12rem;
-    height: 12rem;
-    object-fit: contain;
-    background-image: url("../../assets/pfp.jpg");
-    background-size: 25rem;
-    background-position: -4rem -2rem;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
-  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.25);
+  background-size: 49rem;
+  //   background-position: -4rem -34rem;  //img 1
+  //   background-image: url("../../assets/thingy.jpeg"); //img 1
+  //   background-image: url("../../assets/img2.jpeg"); //img 2
+  //   background-position: -2rem -25rem; //img 2
+  //   background-image: url("../../assets/img3.jpeg"); //img 3
+  //   background-position: -6rem -7rem; //img 3
+  //   background-image: url("../../assets/thingy.jpeg"); //img 1 opt 2
+  //   background-position: -1rem -10rem;  //img 1 opt 2
+  background-image: url("../../assets/img4.jpeg"); //img 4
+  background-position: -5rem -18rem; //img 4
 
   &__who {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    margin-left: 23rem; // img  1
+    margin-top: 3rem; // img 1
+    // margin-left: 6rem; // img 2
+    // margin-top: 3rem; // img 2
+    margin-left: 25rem; // img  4
+    margin-right: 1rem;
+    margin-top: auto; // img 4
+    margin-bottom: auto;
+
   }
 
   &__heading {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
+    color: white;
   }
 
   &__subheading {
     margin: 0;
+    color: white;
+  }
+
+  &__change {
+    color: white;
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    &--link {
+      width: 2rem;
+      height: 2rem;
+      background-color: white;
+      border-radius: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--icons {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }

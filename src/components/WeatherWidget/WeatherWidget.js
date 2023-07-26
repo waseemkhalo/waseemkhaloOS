@@ -117,13 +117,13 @@ function WeatherWidget() {
             .catch((error) => {
               console.error("Error getting weather data:", error);
               setWeatherData(null);
-              setIsLoading(false); 
+              setIsLoading(false);
             });
         },
         (error) => {
           console.error("Error getting geolocation:", error);
           setWeatherData(null);
-          setIsLoading(false); 
+          setIsLoading(false);
         }
       );
     } else {
@@ -143,28 +143,32 @@ function WeatherWidget() {
         weatherData && (
           <div className="weather-info">
             <div className="weather-info__container">
-              <img
-                className="weather-info__icon"
-                src={getWeatherIcon(weatherData.current.condition.code)}
-                alt="Weather Icon"
-              />
-              <div className="weather-info__geo">
+              <div className="weather-info__box">
+                <img
+                  className="weather-info__icon"
+                  src={getWeatherIcon(weatherData.current.condition.code)}
+                  alt="Weather Icon"
+                />
                 <p className="weather-info__temp">
                   {weatherData.current.temp_c}°C
                 </p>
-
-                <h3 className="weather-info__location">
-                  {weatherData.location.name}
-                </h3>
               </div>
             </div>
 
-            <p className="weather-info__location">
-              Feels like {weatherData.current.feelslike_c}°C
-            </p>
-            <p className="weather-info__location">
-              {weatherData.current.condition.text}
-            </p>
+            <div className="weather-info__geo">
+            
+              <h3 className="weather-info__location">
+                {weatherData.location.name}
+              </h3>
+              <p className="weather-info__location">
+                Feels like {weatherData.current.feelslike_c}°C
+              </p>
+              <p className="weather-info__location">
+                {weatherData.current.condition.text}
+              </p>
+            </div>
+
+
             {/* TODO: Forecast? */}
           </div>
         )

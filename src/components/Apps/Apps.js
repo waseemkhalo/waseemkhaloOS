@@ -56,7 +56,7 @@ function Apps() {
         </div>
         <h4 className="apps__header">Mallow</h4>
       </a>
-
+    
       <a
         className="apps__link"
         target="_blank"
