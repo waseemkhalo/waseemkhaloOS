@@ -10,11 +10,6 @@ function Hero() {
         <div className="bio__who">
           <p className="bio__hey">Hey, I'm</p>
           <h1 className="bio__heading">Waseem Khalo</h1>
-          {/* <h2 className="bio__subheading">Software Engineer</h2> */}
-          {/* <p className="bio__change">Inspired to make impactful products</p>
-
-
-          </div> */}
         </div>
       </div>
       <div className="about__content">
