@@ -1,10 +1,9 @@
-
 .bio {
   display: flex;
   align-items: flex-start;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 23rem;
+  height: 45rem;
   box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.25);
   background-size: 49rem;
   //   background-position: -4rem -34rem;  //img 1
@@ -15,8 +14,10 @@
   //   background-position: -6rem -7rem; //img 3
   //   background-image: url("../../assets/thingy.jpeg"); //img 1 opt 2
   //   background-position: -1rem -10rem;  //img 1 opt 2
-  background-image: url("../../assets/img4.jpeg"); //img 4
-  background-position: -5rem -18rem; //img 4
+  background-image: url("../../assets/img6.JPEG"); //img 6
+  background-position: -5rem -18rem; //img 6
+  //   background-image: url("../../assets/img4.jpeg"); //img 4
+  //   background-position: -5rem -18rem; //img 4
 
   &__who {
     display: flex;
@@ -36,8 +37,8 @@
   &__hey {
     color: white;
     font-weight: 400;
-    margin: 0; 
-    transform: translateY(1rem); 
+    margin: 0;
+    transform: translateY(1rem);
   }
 
   &__heading {
@@ -45,8 +46,6 @@
     font-weight: 700;
     margin: 0;
     color: white;
-    
-
   }
 
   &__subheading {
@@ -83,9 +82,63 @@
 }
 
 .about {
-    margin: 0;
+  &__content {
+    overflow: auto;
+  }
 
-    &__title {
-        
+  &__header {
+    margin: 2rem 4rem 0rem 4rem;
+  }
+
+  &__bio {
+    @extend .about__header;
+    margin-top: 0.5rem;
+  }
+}
+
+.skills {
+  margin-top: 2rem;
+  background-color: #efefef;
+  height: fit-content;
+
+  &__header {
+    padding: 2rem 4rem 0rem 4rem
+  }
+
+  &__bio {
+    @extend .about__header;
+  }
+
+  &__container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0rem 4rem 2rem 4rem;
+  }
+
+  &__box{
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    box-shadow: 0px 2px 25px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  &__icons {
+    width: 3rem;
+    height: 3rem;
+
+    &--stretch {
+        height: 3.5rem;
     }
+
+    &--shrink {
+        height: 2.5rem;
+    }
+  }
 }

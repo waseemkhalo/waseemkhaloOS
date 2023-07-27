@@ -5,9 +5,9 @@ import anbu from "../../assets/apps/anbu-logo.png";
 import github from "../../assets/apps/github-logo.png";
 import linkedin from "../../assets/apps/linkedin-logo.png";
 import mallow from "../../assets/apps/mallow-logo.png";
+import waseem from "../../assets/apps/waseem-logo.png";
 
 function Apps() {
-
   const showAlert = () => {
     alert(
       "This site is was my capstone project & is currently under construction. Please check back soon for updates. Thanks for visiting!"
@@ -16,6 +16,18 @@ function Apps() {
 
   return (
     <div className="apps">
+      <a
+        className="apps__link"
+        target="_blank"
+        href="https://www.waseemkhalo.com"
+        rel="noopener noreferrer"
+      >
+        <div className="apps__container">
+          <img className="apps__logo" src={waseem} alt="everyday logo" />
+        </div>
+        <h4 className="apps__header">My Blog</h4>
+      </a>
+
       <a
         className="apps__link"
         target="_blank"
@@ -45,8 +57,6 @@ function Apps() {
         rel="noopener noreferrer"
         onClick={showAlert}
       >
-               
-
         <div className="apps__container apps__container--mallow">
           <img
             className="apps__logo apps__mallow"
@@ -56,7 +66,7 @@ function Apps() {
         </div>
         <h4 className="apps__header">Mallow</h4>
       </a>
-    
+
       <a
         className="apps__link"
         target="_blank"
