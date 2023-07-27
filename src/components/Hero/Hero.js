@@ -53,6 +53,12 @@ function Hero() {
             LinkedIn.{" "}
           </p>
         </div>
+
+        <div className="footer">
+          <p className="footer__desc">
+            Waseem Khalo © 2023
+          </p>
+        </div>
       </div>
     </>
   );
