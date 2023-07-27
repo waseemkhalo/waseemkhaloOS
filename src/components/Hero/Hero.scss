@@ -59,26 +59,7 @@
     color: white;
   }
 
-  &__socials {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
 
-    &--link {
-      width: 2rem;
-      height: 2rem;
-      background-color: white;
-      border-radius: 25%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &--icons {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-  }
 }
 
 .about {
