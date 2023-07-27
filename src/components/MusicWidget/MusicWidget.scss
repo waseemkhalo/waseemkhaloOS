@@ -12,6 +12,8 @@
     align-items: center;
     margin-right: 1.63rem;
     gap: 1rem;
+
+
   }
 
   &__player {
@@ -44,6 +46,7 @@
     font-weight: 600;
     line-height: normal;
     margin-bottom: 0.5rem;
+    margin-top: 0;
 
     &-details {
       color: #fff;
@@ -52,6 +55,10 @@
       font-weight: 400;
       line-height: normal;
       margin-top: 0;
+
+      &--fav {
+        margin-bottom: 0;
+      }
     }
   }
 }

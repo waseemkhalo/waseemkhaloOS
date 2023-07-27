@@ -47,15 +47,47 @@
 .css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
     color: #557feb;
     font-size: 1rem;
-    font-style: bold;
     font-weight: 700;
   }
   
   
-  .MuiDateCalendar-root {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
-  }
+.css-qa7bje-MuiButtonBase-root-MuiPickersDay-root{
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
 
-  
+.css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  border: none;
+}
+
+.css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
+  fill: white;
+}
+
+.css-1nkg345-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+  color: white;
+}
+
+.css-kg9q0s-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+  color: white;
+}
+
+.css-cyfsxc-MuiPickersCalendarHeader-labelContainer {
+  font-weight: 700;
+  color: #fff;
+
+}
+
+.css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #1870D8;
+ 
+}
