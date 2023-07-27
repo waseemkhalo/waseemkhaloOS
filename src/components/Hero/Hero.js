@@ -43,6 +43,16 @@ function Hero() {
         </div>
 
         <Skills />
+
+        <div className="contact">
+          <h1 className="contact__header">Contact</h1>
+          <p className="contact__bio">
+            {" "}
+            I am currently looking for new opportunities. If you would like to
+            get in touch, please feel free to reach out to me via email or
+            LinkedIn.{" "}
+          </p>
+        </div>
       </div>
     </>
   );

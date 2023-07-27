@@ -15,10 +15,11 @@ import tailwindcss from "../../assets/icons/techstack/tailwindcss-logo.png";
 import materialui from "../../assets/icons/techstack/materialui-logo.png";
 import postman from "../../assets/icons/techstack/postman-logo.png";
 import figma from "../../assets/icons/techstack/figma-logo.png";
-// import photoshop from "../../assets/icons/techstack/photoshop-logo.png";
-// import premierepro from "../../assets/icons/techstack/premierepro-logo.png";
-// import aftereffects from "../../assets/icons/techstack/aftereffects-logo.png";
-// import illustrator from "../../assets/icons/techstack/illustrator-logo.png";
+import photoshop from "../../assets/icons/techstack/photoshop-logo.png";
+import premierepro from "../../assets/icons/techstack/premierepro-logo.png";
+import aftereffects from "../../assets/icons/techstack/aftereffects-logo.png";
+import illustrator from "../../assets/icons/techstack/illustrator-logo.png";
+import qb from "../../assets/icons/techstack/qb-logo.png";
 
 function Skills() {
   return (
@@ -69,6 +70,21 @@ function Skills() {
             </div>
             <div className="skills__box">
               <img className="skills__icons" src={figma} alt="figma"/>
+            </div>
+            <div className="skills__box">
+              <img className="skills__icons" src={photoshop} alt="figma"/>
+            </div>
+            <div className="skills__box">
+              <img className="skills__icons" src={premierepro} alt="figma"/>
+            </div>
+            <div className="skills__box">
+              <img className="skills__icons" src={aftereffects} alt="figma"/>
+            </div>
+            <div className="skills__box">
+              <img className="skills__icons" src={illustrator} alt="figma"/>
+            </div>
+            <div className="skills__box">
+              <img className="skills__icons" src={qb} alt="figma"/>
             </div>
           </div>
         </div>
