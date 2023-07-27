@@ -26,19 +26,14 @@ function Hero() {
             create impactful, visually stunning, and user-friendly products that
             solve real-world problems and enhance the overall user experience.{" "}
           </p>
-          <p className="about__bio">
-            {" "}
-            My professional background first began in accounting when I studied
-            at the University of Guelph-Humber.{" "}
-          </p>
-          <p className="about__bio">
+            <p className="about__bio">
             {" "}
             When I'm not behind my desk working, my heart draws me to the great
             outdoors, where I am captivated by the beauty of nature and the art
             of capturing it through photography and videography. Whether I'm
             hiking through breathtaking landscapes or documenting the wonders of
             the natural world, every frame I capture brings me inspiration and
-            peace. If I could, I would live in the mountains :P{" "}
+            peace.{" "}
           </p>
         </div>
 
@@ -52,12 +47,11 @@ function Hero() {
             get in touch, please feel free to reach out to me via email or
             LinkedIn.{" "}
           </p>
+          <p>Click on any of the bookmarks or apps to see more of my work!</p>
         </div>
 
         <div className="footer">
-          <p className="footer__desc">
-            Waseem Khalo © 2023
-          </p>
+          <p className="footer__desc">Waseem Khalo © 2023</p>
         </div>
       </div>
     </>
