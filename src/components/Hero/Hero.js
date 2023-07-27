@@ -35,6 +35,7 @@ function Hero() {
             the natural world, every frame I capture brings me inspiration and
             peace.{" "}
           </p>
+
         </div>
 
         <Skills />
@@ -48,10 +49,12 @@ function Hero() {
             LinkedIn.{" "}
           </p>
           <p>Click on any of the bookmarks or apps to see more of my work!</p>
+          <a className='contact__email' href="mailto:waseemkhalo@gmail.com">waseemkhalo@gmail.com</a>
+
         </div>
 
         <div className="footer">
-          <p className="footer__desc">Waseem Khalo © 2023</p>
+          <p>Waseem Khalo © 2023</p>
         </div>
       </div>
     </>

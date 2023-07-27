@@ -80,13 +80,18 @@
 
 .contact {
     padding: 0rem 2rem 2rem 4rem;
+
+    &__header {
+        margin-bottom: 0;
+    }
+
+  
     
 }
 
 .footer {
     background-color: #efefef;
     border-radius: 0rem 0rem 0rem 1.5rem;
-
     display: flex;
     justify-content: center;
     align-items: center;

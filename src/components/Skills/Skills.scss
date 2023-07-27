@@ -3,11 +3,12 @@
     margin-top: 2rem;
     background-color: #efefef;
     height: fit-content;
-    border-radius: 0rem 0rem 0rem 1.5rem;
 
   
     &__header {
-      padding: 2rem 4rem 0rem 4rem
+      padding: 2rem 4rem 0rem 4rem;
+      margin-top: 0rem;
+      margin-bottom: 1rem;
     }
   
     &__bio {
