@@ -9,15 +9,24 @@ function CalendarWidget() {
       <div className="calendar__container">
         <h1 className="calendar__title">Today</h1>
         <div className="calendar__meetings-container">
-          <p className="calendar__meetings">1:00 PM l Finish v1 of portfolio </p>
-          <p className="calendar__meetings">1:30 PM l Finish v2 (add moblie) of portfilio </p>
-          <p className="calendar__meetings">2:30 PM l Get a job </p>
-          <p className="calendar__meetings">3:30 PM l Create impactful products </p>
-          <p className="calendar__meetings">4:30 PM l Continuing learning new skills </p>
+          <p className="calendar__meetings">
+            1:00 PM l Finish v1 of portfolio{" "}
+          </p>
+          <p className="calendar__meetings">
+            1:30 PM l Finish v2 (add moblie view) of portfilio{" "}
+          </p>
+          <p className="calendar__meetings">2:30 PM l Gym! </p>
+          <p className="calendar__meetings">
+            3:30 PM l Create impactful products{" "}
+          </p>
+          <p className="calendar__meetings">
+            4:30 PM l Continuing learning new skills{" "}
+          </p>
         </div>
       </div>
 
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <LocalizationProvider
+        dateAdapter={AdapterDayjs}>
         <DateCalendar />
       </LocalizationProvider>
     </div>
