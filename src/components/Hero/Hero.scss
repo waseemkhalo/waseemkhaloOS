@@ -14,10 +14,10 @@
   //   background-position: -6rem -7rem; //img 3
   //   background-image: url("../../assets/thingy.jpeg"); //img 1 opt 2
   //   background-position: -1rem -10rem;  //img 1 opt 2
-  background-image: url("../../assets/img6.JPEG"); //img 6
-  background-position: -5rem -18rem; //img 6
-  //   background-image: url("../../assets/img4.jpeg"); //img 4
-  //   background-position: -5rem -18rem; //img 4
+  //   background-image: url("../../assets/img6.JPEG"); //img 6
+  //   background-position: -5rem -18rem; //img 6
+  background-image: url("../../assets/img4.jpeg"); //img 4
+  background-position: -5rem -18rem; //img 4
 
   &__who {
     display: flex;
@@ -58,8 +58,6 @@
   &__change {
     color: white;
   }
-
-
 }
 
 .about {
@@ -77,22 +75,18 @@
   }
 }
 
-
 .contact {
-    padding: 0rem 2rem 2rem 4rem;
+  padding: 0rem 2rem 2rem 4rem;
 
-    &__header {
-        margin-bottom: 0;
-    }
-
-  
-    
+  &__header {
+    margin-bottom: 0;
+  }
 }
 
 .footer {
-    background-color: #efefef;
-    border-radius: 0rem 0rem 0rem 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #efefef;
+  border-radius: 0rem 0rem 0rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -20,7 +20,7 @@ function CalendarWidget() {
             3:30 PM l Create impactful products{" "}
           </p>
           <p className="calendar__meetings">
-            4:30 PM l Continuing learning new skills{" "}
+            4:30 PM l Continue learning new skills{" "}
           </p>
         </div>
       </div>
