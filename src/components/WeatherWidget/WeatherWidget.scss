@@ -1,20 +1,46 @@
+@import "../../styles/partials/_breakpoints.scss";
+
 .weather {
   border-radius: 1.6875rem;
   background: rgba(255, 255, 255, 0.57);
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin-top: 0.75rem;
-  width: 20rem;
-  height: 15rem;
+  padding: 1rem;
+
+  @include lg {
+    height: 12rem;
+  }
+
+  @include xl {
+    width: 20rem;
+    height: 15rem;
+  }
 
   &-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+
+    @include lg {
+      margin-top: 0rem;
+    }
+    
+    @include xl {
+      margin-top: 2rem;
+    }
 
     &__icon {
-      width: 4rem;
+
+      @include lg {
+        width: 3.5rem;
+      }
+      
+      @include xl {
+        width: 4rem;
+      }
     }
 
     &__container {
@@ -22,7 +48,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      margin-top: 2rem;
+      
+
+    
     }
 
     &__box {
@@ -39,14 +67,25 @@
 
     &__temp {
       color: #fff;
-      font-size: 4rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       margin: 0;
+
+      @include lg {
+        margin-top: 0rem;
+        font-size: 3.5rem;
+
+      }
+      
+      @include xl {
+        font-size: 4rem;
+
+      }
     }
 
-    &__location, &__details {
+    &__location,
+    &__details {
       color: #fff;
       font-size: 1rem;
       font-style: normal;
@@ -54,8 +93,6 @@
       line-height: normal;
       margin: 0;
     }
-
-
   }
 
   &--loading {

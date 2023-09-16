@@ -1,63 +1,72 @@
+@import "../../styles/partials/_breakpoints.scss";
+
 .apps {
+  display: flex;
+
+  gap: 2rem;
+
+
+  &__link {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    align-content: center;
+  }
 
-    &__link {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #000;
-        text-decoration: none;
-        align-content: center;
+  &__container {
+    background-color: #f9f9f9;
+    border-radius: 45px;
+    display: flex;
+    height: 120px;
+    width: 120px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+
+    &--anbu {
+      background-color: #18191f;
     }
 
-    &__container {
-        background-color: #F9F9F9;
-        border-radius: 45px;
-        display: flex;
-        height: 120px;
-        width: 120px;
-        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    &--mallow {
+      background-color: #18191f;
+    }
+  }
 
-        &--anbu {
-            background-color: #18191F;
-        }
+  &__drag {
+    display: flex;
+    justify-content: space-between;
 
-        &--mallow {
-            background-color: #18191F;
-        }
+    @include lg {
 
     }
 
-    &__drag {
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
+    @include xl {
+      gap: 2rem;
     }
+  }
 
-    &__logo {
-        margin: auto auto;
-        width: 70%;
-        height: 70%;
-    }
+  &__logo {
+    margin: auto auto;
+    width: 70%;
+    height: 70%;
+  }
 
-    &__header {
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 400;
-        margin: 0;
-        padding-top: .625rem;
-    }
+  &__header {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 0.625rem;
+  }
 
-    &__anbu {
-        
-        margin: 1.5rem auto;
-        width: 80%;
-        height: 50%;
-    }
+  &__anbu {
+    margin: 1.5rem auto;
+    width: 80%;
+    height: 50%;
+  }
 
-    &__mallow {
-        width: 80%;
-        height: 40%;
-    }
+  &__mallow {
+    width: 80%;
+    height: 40%;
+  }
 }

@@ -54,7 +54,7 @@ function WeatherWidget() {
   const [weatherData, setWeatherData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const apiKey = "0e5e8b4c2f6c48d2853205406232107"; // Replace with your actual API key from www.weatherapi.com
+  const apiKey = "0e5e8b4c2f6c48d2853205406232107"; 
 
   const getWeatherData = async (latitude, longitude) => {
     try {

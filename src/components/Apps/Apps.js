@@ -18,18 +18,8 @@ function Apps() {
   return (
     <DragDropContext>
       <div className="apps">
-        {/* <a
-                                    className="apps__link"
-                                    target="_blank"
-                                    href="https://www.waseemkhalo.com"
-                                    rel="noopener noreferrer"
-                                  >
-                                    <div className="apps__container">
-                                      <img className="apps__logo" src={waseem} alt="everyday logo" />
-                                    </div>
-                                    <h4 className="apps__header">My Blog</h4>
-                                          </a> */}
 
+{/* add blog */}
         <Droppable droppableId="apps" direction="horizontal">
           {(provided) => (
             <div
