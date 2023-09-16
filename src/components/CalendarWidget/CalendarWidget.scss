@@ -1,13 +1,23 @@
+@import "../../styles/partials/_breakpoints.scss";
+
 .calendar {
   border-radius: 1.6875rem;
   background: rgba(255, 255, 255, 0.57);
   display: flex;
 
+  @include lg {
+    width: 80%;
+  }
+
+  @include xl {
+    width: 100%;
+    height: 100%;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     margin-left: 1.06rem;
-    
   }
 
   &__title {
@@ -17,10 +27,8 @@
     font-weight: 700;
     line-height: normal;
     padding-left: 2rem;
-    display: flex; 
+    display: flex;
     align-items: center;
-    width: 30rem;
-    height: 3rem;
     border-radius: 1.6875rem;
     background: linear-gradient(
       90deg,
@@ -28,31 +36,54 @@
       #359af6 47.92%,
       #97bef6 89.58%
     );
+
+    @include lg {
+      width: 22rem;
+      height: 3rem;
+    }
+
+    @include xl {
+      font-size: 1.5rem;
+      width: 30rem;
+      height: 3rem;
+    }
   }
 
   &__meetings {
-    color: #fff;
-    font-size: 1.2rem;
     font-style: normal;
+    color: #fff;
     font-weight: 400;
     line-height: normal;
 
-    &-container {
-        margin-left: 3rem;
+    @include lg {
+      font-size: 1.1rem;
     }
-}
 
+    @include xl {
+      font-size: 1.2rem;
+    }
+
+    &-container {
+      
+      @include lg {
+        margin-left: 1rem;
+      }
+
+      @include xl {
+        margin-left: 3rem;
+      }
+    }
+  }
 }
 
 .css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
-    color: #557feb;
-    font-size: 1rem;
-    font-weight: 700;
-    border: none;
-  }
-  
-  
-.css-qa7bje-MuiButtonBase-root-MuiPickersDay-root{
+  color: #557feb;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+
+.css-qa7bje-MuiButtonBase-root-MuiPickersDay-root {
   color: white;
   font-weight: 700;
   font-size: 1rem;
@@ -79,12 +110,10 @@
 .css-cyfsxc-MuiPickersCalendarHeader-labelContainer {
   font-weight: 700;
   color: #fff;
-
 }
 
 .css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
   font-weight: 700;
   font-size: 1rem;
-  background-color: #1870D8;
- 
+  background-color: #1870d8;
 }

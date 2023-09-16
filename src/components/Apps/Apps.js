@@ -49,7 +49,6 @@ function Apps() {
                       target="_blank"
                       href="https://www.everydaytodo.com"
                       rel="noopener noreferrer"
-                      
                     >
                       <div className="apps__container">
                         <img
