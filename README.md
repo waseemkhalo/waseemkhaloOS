@@ -21,9 +21,10 @@ This portfolio website is designed to showcase my projects, skills, and experien
 To view the website, simply navigate to waseemkhalo.com. Most things are clickable, so you can click on 90% of the icons and objects. 
 
 ## Screenshots
-![Screenshot 2024-03-15 at 7 33 04 AM](https://github.com/waseemkhalo/waseemkhaloOS/assets/19737225/074171bb-6983-418c-9a61-1e635263062b)
+**![Screenshot 2024-03-15 at 7 33 04 AM](https://github.com/waseemkhalo/waseemkhaloOS/assets/19737225/074171bb-6983-418c-9a61-1e635263062b)**
 
 ## Support
+
 If you encounter any issues or have any feedback regarding the website, feel free to reach out to me via email at waseemkhalo@gmail.com.
 
 
